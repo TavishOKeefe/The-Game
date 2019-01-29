@@ -1,0 +1,14 @@
+<p>
+  Welcome to the wonderful world of decision making. Put your childlike view of the world behind you. This is the real world.
+</p>
+
+<label>What would you like to do?</label>
+
+  <select #firstQuestion>
+    <option></option>
+    <option [value]="1">Strut</option>
+    <option [value]="2">Walk</option>
+    <option [value]="3">Run</option>
+  </select>
+
+  <button (click)="submitQuestionOne(parseInt(firstQuestion.value)); firstQuestion.value='';">Go!</button>
